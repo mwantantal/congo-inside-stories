@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Congo Inside Stories — Mobile</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<meta name="description" content="Congo Inside Stories — independent reporting on business, mines, tech, environment and culture in the DRC." />
+<meta property="og:title" content="Congo Inside Stories" />
+<meta property="og:description" content="Independent reporting on business, mines, tech, environment and culture in the DRC." />
+<meta property="og:image" content="placeholder-social.png" />
+<style>
+:root{
+  --bg:#ffffff; --muted:#6b7280; --accent:#d35400; --card:#f8f9fb;
+  --maxw:760px;
+  font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:#111;display:flex;justify-content:center}
+.container{width:100%;max-width:var(--maxw);padding:16px}
+.header{display:flex;align-items:center;gap:12px;padding:8px 0}
+.logo{font-weight:700;color:var(--accent);font-size:18px}
+.nav-toggle{margin-left:auto;background:transparent;border:0;font-size:18px;color:var(--muted)}
+.search{margin-top:8px;width:100%;display:flex}
+.search input{flex:1;padding:10px;border-radius:8px;border:1px solid #e6e9ef}
+.hero{margin-top:10px;background:linear-gradient(90deg,#fff 0,#fff);border-radius:10px;padding:12px;display:flex;gap:12px;align-items:flex-start}
+.hero img{width:110px;height:78px;object-fit:cover;border-radius:6px}
+.headline{font-weight:700;font-size:16px;margin:0}
+.lead{color:var(--muted);font-size:13px;margin-top:6px}
+.section-title{margin:18px 0 8px;font-weight:600;color:#222;font-size:13px}
+.card{background:var(--card);padding:12px;border-radius:8px;margin-bottom:10px;display:flex;gap:10px;align-items:center}
+.card img{width:80px;height:56px;object-fit:cover;border-radius:6px}
+.meta{font-size:12px;color:var(--muted)}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.small{font-size:13px}
+.footer{padding:20px 0;color:var(--muted);font-size:13px;text-align:center}
+.tag{display:inline-block;background:#fff0e6;color:var(--accent);padding:6px 8px;border-radius:999px;font-size:11px;margin-right:6px}
+@media(min-width:720px){
+  .grid{grid-template-columns:repeat(3,1fr)}
+  .hero img{width:160px;height:100px}
+}
+</style>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="logo">Congo Inside Stories</div>
+      <button class="nav-toggle" aria-label="menu">☰</button>
+    </header>
+
+    <div class="search">
+      <input placeholder="Search Congo Inside Stories…" aria-label="search" />
+    </div>
+
+    <!-- Top story -->
+    <article class="hero" aria-labelledby="top-headline">
+      <img src="https://via.placeholder.com/160x100.png?text=Top+Story" alt="">
+      <div>
+        <div class="tag">Mines & Energy</div>
+        <h1 id="top-headline" class="headline">Kamoa-Kakula smelter starts anode production, a major step for DRC</h1>
+        <p class="lead">Ivanhoe Mines announces first anodes from its Lualaba smelter; ramp-up planned through 2026.</p>
+        <div class="meta">By MBM — 29 Jan 2026 · 4m read</div>
+      </div>
+    </article>
+
+    <div class="section-title">Latest</div>
+    <div class="card">
+      <img src="https://via.placeholder.com/120x80.png?text=Copper" alt="">
+      <div>
+        <div class="small">Copper market rally</div>
+        <div class="meta">Market · Jan 28</div>
+      </div>
+    </div>
+
+    <div class="section-title">Business & Economy</div>
+    <div class="card">
+      <img src="https://via.placeholder.com/120x80.png?text=Budget" alt="">
+      <div>
+        <div class="small">DRC budget 2026 adopted at 54,335.7bn CDF</div>
+        <div class="meta">Economy · Jan 15</div>
+      </div>
+    </div>
+
+    <div class="section-title">Mines & Energy</div>
+    <div class="grid">
+      <div class="card">
+        <img src="https://via.placeholder.com/120x80.png?text=Chemaf" alt="">
+        <div>
+          <div class="small">Chemaf sale: Virtus leads — FT</div>
+          <div class="meta">Mines · Jan 30</div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/120x80.png?text=Cobalt" alt="">
+        <div>
+          <div class="small">Cobalt quotas extended to March 2026 — ARECOMS</div>
+          <div class="meta">Policy · Jan 12</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-title">Tech & Com</div>
+    <div class="card">
+      <img src="https://via.placeholder.com/120x80.png?text=Telecoms" alt="">
+      <div>
+        <div class="small">WACS outage impacts internet; govt orders audit</div>
+        <div class="meta">Tech · Jan 14</div>
+      </div>
+    </div>
+
+    <div class="section-title">Environment</div>
+    <div class="card">
+      <img src="https://via.placeholder.com/120x80.png?text=Garamba" alt="">
+      <div>
+        <div class="small">24 white rhinos moved to Garamba park</div>
+        <div class="meta">Nature · Jan 10</div>
+      </div>
+    </div>
+
+    <div class="footer">
+      Congo Inside Stories · Independent reporting from the DRC — <a href="#" style="color:inherit;text-decoration:underline">Subscribe</a>
+    </div>
+
+  </div>
+</body>
+</html>
